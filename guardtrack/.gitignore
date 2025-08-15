@@ -41,3 +41,84 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Web related
+/web/build/
+
+# Windows related
+/windows/flutter/ephemeral/
+
+# macOS related
+/macos/Flutter/ephemeral/
+/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Linux related
+/linux/flutter/ephemeral/
+
+# iOS related
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Android related
+**/android/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+*.jks
+
+# Firebase
+**/google-services.json
+**/GoogleService-Info.plist
+firebase_options.dart
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# API Keys and sensitive data
+api_keys.dart
+secrets.dart
+config/api_keys.dart
+lib/core/config/api_keys.dart
+
+# Test files that shouldn't be committed
+test_email_simple.dart
+test_whatsapp_api.dart
+update_whatsapp_config.dart
+
+# Coverage
+coverage/
+
+# Exceptions to above rules.
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.config.dart
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary test files
+temp_*
+test_*
+debug_*

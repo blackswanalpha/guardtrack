@@ -1,0 +1,109 @@
+# GuardTrack Project .gitignore
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.metadata
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+*.cache
+.history
+.buildlog/
+
+# Environment and Configuration Files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+config.json
+secrets.json
+*.key
+*.pem
+*.p12
+*.keystore
+
+# Build and Distribution
+build/
+dist/
+out/
+target/
+bin/
+obj/
+
+# Dependencies and Package Managers
+node_modules/
+.npm
+.yarn/
+.pnp.*
+yarn-error.log
+package-lock.json
+
+# Flutter/Dart specific (for any Flutter files in root)
+.dart_tool/
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Archive Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# API Keys and Sensitive Data
+api_keys.txt
+credentials.json
+firebase_options.dart
+google-services.json
+GoogleService-Info.plist
+
+# Test Coverage
+coverage/
+.nyc_output/
+lcov.info
+
+# Miscellaneous
+*.class
+*.pyc
+.svn/
+migrate_working_dir/
+.augment
+.clinerules
