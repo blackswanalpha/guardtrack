@@ -1,0 +1,72 @@
+/// API Keys Configuration Template
+/// 
+/// Copy this file to api_keys.dart and fill in your actual API keys
+/// DO NOT commit the actual api_keys.dart file to version control
+/// 
+/// Usage:
+/// 1. Copy this file: cp api_keys.dart.template api_keys.dart
+/// 2. Fill in your actual API keys and credentials
+/// 3. The api_keys.dart file will be ignored by git
+
+class ApiKeys {
+  // WhatsApp Cloud API Configuration
+  static const String whatsappToken = 'YOUR_WHATSAPP_ACCESS_TOKEN_HERE';
+  static const String whatsappPhoneNumberId = 'YOUR_PHONE_NUMBER_ID_HERE';
+  static const String whatsappBusinessAccountId = 'YOUR_BUSINESS_ACCOUNT_ID_HERE';
+  
+  // Email SMTP Configuration
+  static const String emailHost = 'smtp.gmail.com'; // or your SMTP host
+  static const int emailPort = 587;
+  static const String emailUsername = 'your-email@gmail.com';
+  static const String emailPassword = 'your-app-password'; // Use app password for Gmail
+  static const String emailFromName = 'GuardTrack System';
+  
+  // Database Configuration (if using external database)
+  static const String databaseUrl = 'YOUR_DATABASE_URL_HERE';
+  static const String databaseApiKey = 'YOUR_DATABASE_API_KEY_HERE';
+  
+  // Firebase Configuration (if using Firebase)
+  static const String firebaseApiKey = 'YOUR_FIREBASE_API_KEY_HERE';
+  static const String firebaseProjectId = 'YOUR_FIREBASE_PROJECT_ID_HERE';
+  
+  // Google Maps API (if using maps)
+  static const String googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY_HERE';
+  
+  // Other API Keys
+  static const String encryptionKey = 'YOUR_ENCRYPTION_KEY_HERE';
+  static const String jwtSecret = 'YOUR_JWT_SECRET_HERE';
+  
+  // Development/Testing flags
+  static const bool isDevelopment = true;
+  static const bool enableLogging = true;
+  static const bool enableTestMode = false;
+}
+
+/// Email Configuration Class
+class EmailConfig {
+  static const String smtpHost = ApiKeys.emailHost;
+  static const int smtpPort = ApiKeys.emailPort;
+  static const String username = ApiKeys.emailUsername;
+  static const String password = ApiKeys.emailPassword;
+  static const String fromName = ApiKeys.emailFromName;
+  static const String fromEmail = ApiKeys.emailUsername;
+  
+  // Email templates
+  static const String attendanceReportSubject = 'Daily Attendance Report - {date}';
+  static const String alertSubject = 'GuardTrack Alert - {type}';
+  static const String welcomeSubject = 'Welcome to GuardTrack';
+}
+
+/// WhatsApp Configuration Class
+class WhatsAppConfig {
+  static const String accessToken = ApiKeys.whatsappToken;
+  static const String phoneNumberId = ApiKeys.whatsappPhoneNumberId;
+  static const String businessAccountId = ApiKeys.whatsappBusinessAccountId;
+  static const String apiVersion = 'v18.0';
+  static const String baseUrl = 'https://graph.facebook.com';
+  
+  // Message templates
+  static const String checkInTemplate = 'check_in_confirmation';
+  static const String alertTemplate = 'security_alert';
+  static const String reportTemplate = 'daily_report';
+}
